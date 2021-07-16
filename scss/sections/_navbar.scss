@@ -1,0 +1,47 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.menu{
+    @include gradient;
+
+
+    .company-logo{
+        @include media-breakpoint-down(md)
+        {
+            margin-top: 1rem;
+            margin-left: 1rem;
+
+        }
+        
+    }
+    .humburger-menu-icon{
+        @include media-breakpoint-down(md)
+        {
+            margin-top: 1rem;
+            margin-right: 1rem;
+        }
+
+    }
+
+    li{
+        padding: 0 0 0 1em;
+    }  
+    a{
+        color: white !important;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
+    @include media-breakpoint-down(sm){
+        li{
+            padding-left:0;
+        }
+    }
+    @include media-breakpoint-down(md){
+        li{
+            padding-left:0;
+        }
+    }
+
+
+}

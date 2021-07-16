@@ -1,0 +1,181 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+
+
+.footer_section {
+    background-color: $footer;
+}
+
+.contact-box {
+    position: relative;
+
+    &__icon {
+        width: 2rem;
+        stroke: $purple-light;
+        // border: solid 2px red ;
+
+        @include media-breakpoint-up(sm) {
+            width: 3rem;
+        }
+
+    }
+
+    &__info {
+        // border: solid 2px red ;
+
+        &--title {
+            @include media-breakpoint-up(sm) {
+                font-size: 1.5rem;
+            }
+
+            font-size: 1rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: capitalize;
+
+            &:hover {
+                color: $pink;
+            }
+
+        }
+
+        &--subtitle {
+            @include media-breakpoint-up(sm) {
+                font-size: 1rem;
+            }
+
+            font-size: 0.8rem;
+            color: gray;
+
+        }
+    }
+
+}
+
+// smaller footer
+.smaller-footer {
+    position: relative;
+    @include gradient;
+
+    .colum-1{
+
+        h5{
+            font-size: 0.8rem;
+            color: white;
+            @include media-breakpoint-up(sm){
+                font-size: 1rem;
+            }
+        }
+
+    }
+
+    .colum-2{
+        text-align: center ;
+        @include media-breakpoint-up(md){
+            text-align: left ;
+
+        }
+
+
+        
+        a{
+            margin-right: 1em ;
+            text-decoration: none;
+            i{
+                color:$purple-dark;
+                font-size: 1em;
+                @include media-breakpoint-up(sm){
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+    }
+}
+
+// footer campany info
+.campany-info{
+    background-color: $footer;
+    position: relative;
+    
+    
+    h4{
+        // border: solid red 2px;
+        font-size: 1.3rem;
+        // @include media-breakpoint-up(lg){
+        //     font-size: 1.6rem;
+        // }
+        @include media-breakpoint-up(sm){
+            font-size: 1.6rem;
+        }
+        display: block;
+
+        
+    }
+    p{
+        font-size: 0.8rem;
+        @include media-breakpoint-up(sm){
+            font-size: 1rem;
+        }
+
+    }
+
+    ul{
+        padding: 0;
+        margin-bottom:2em ;
+        
+
+        li{
+            // border: solid red 2px;
+            list-style: none;
+            margin-bottom: 1em;
+            font-size: 0.8rem;
+            @include media-breakpoint-up(sm){
+                font-size: 1rem;
+            }
+            
+            a{
+                text-decoration: none;
+                color: white;
+
+                &:hover{
+                    color: $purple-dark;
+                }
+            }
+
+        }
+    }
+
+
+}
+
+// footer bottom copyriht
+.footer-bottom{
+    background-color: black;
+    position: relative;
+
+    &__copyright{
+
+        h4{
+            font-size: 0.7rem;
+            @include media-breakpoint-up(sm){
+                font-size: 1rem;
+            }
+
+        }
+        
+        a{
+            color: gray;
+            text-decoration: none;
+            list-style: none;
+
+            &:hover{
+                color: $purple-dark;
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,55 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+.get-started {
+    position: relative;
+    background-color: rgb(230, 223, 223);
+
+    p {
+        line-height: 1.8em;
+
+    }
+
+    h4 {
+        margin-top: 1.5em;
+    }
+
+    .get-started-col-1 {
+        @include gradient;
+
+        ul {
+            padding: 0;
+            list-style: none;
+
+            li {
+                display: inline-block;
+                padding: 0.5em;
+            }
+
+        }
+
+
+    }
+
+    .get-started-col-2{
+        font-family: 'Poppins', sans-serif;
+
+
+
+        form{
+            margin-top: 5em;
+        }
+
+
+
+        .submit{
+            margin-top: 1em;
+            width: 100%;
+            background-color: indigo;
+            color: white;
+            position: relative;
+
+        }
+
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "test2_bootstrap_sass",
+  "version": "1.0.0",
+  "description": "a protfolio that used sass and bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "learn",
+    "bootstrap",
+    "sass",
+    "portfolio"
+  ],
+  "author": "Mohammed Al-huraibi",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "autoprefixer": "^10.2.6",
+    "bootstrap": "^5.0.2",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.35.1"
+  }
+}
